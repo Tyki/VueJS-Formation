@@ -1,16 +1,18 @@
 <template>
   <div class="row">
     <!-- Ici je relie mes input aux données de mon composant avec un v-model -->
-    <input type="text" id="firstname" />
+    <input type="text" id="firstname" v-model="firstname"/>
     <label for="firstname">Prénom</label>
-    <input type="text" id="lastname" />
+    <input type="text" id="lastname" v-model="lastname"/>
     <label for="lastname">Nom de famille</label>
-    <input type="text" id="subject" />
+    <input type="text" id="subject" v-model="subject"/>
     <label for="subject">Sujet de la demande </label>
     
     <br>
     
-    <textarea></textarea>
+    <textarea v-model="content"></textarea>
+
+    <button type="button" @click="submitForm">Soumettre</button>
   </div>
 </template>
 
@@ -23,6 +25,11 @@ export default {
       lastname: '',
       subject: '',
       content: ''
+    }
+  },
+  methods: {
+    submitForm () {
+      console.log(this.firstname, this.lastname, this.subject, this.content)
     }
   }
 }

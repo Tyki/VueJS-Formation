@@ -9,6 +9,10 @@
 
     <tbody>
       <!-- Ici j'affiche mes skills : j'utilise un v-for -->
+      <tr v-for="(skill, key) in skills" :key="key">
+        <td> {{ skill.name }}</td>
+        <td> {{ skill.percent}} </td>
+      </tr>
     </tbody>
   </table>
 </template>
