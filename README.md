@@ -6,4 +6,4 @@ Maintenant que nous avons notre structure, nous allons faire deux choses :
 
 Ce que vous avez à faire dans ce second exercice, c'est de correctement afficher les compétences qui sont dans les données du composant `mySkills`
 
-Aussi, dans le composant `contact`, vous devez relier les input en "two way binding" avec les propriétés correspondantes du composant
+Aussi, dans le composant `contact`, vous devez relier les input en "two way binding" avec les propriétés correspondantes du composant, rajouter un bouton "soumettre" et afficher les données qui ont été saisies dans la console
