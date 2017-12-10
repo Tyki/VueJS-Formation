@@ -1,14 +1,9 @@
-# Exercice 1
+# Exercice 2
 
-Ce premier exercice concerne la mise en place de nos composants pour faire notre portfolio.
+Maintenant que nous avons notre structure, nous allons faire deux choses : 
+- afficher des informations sur nos compétences dans un composant
+- créer la premiere partie d'un formulaire de contact
 
-Nous allons mettre dans notre site : 
-- un header
-- un body en deux colonnes
-- un footer
+Ce que vous avez à faire dans ce second exercice, c'est de correctement afficher les compétences qui sont dans les données du composant `mySkills`
 
-Chaque composant DOIT être indépendant
-
-Dans ce premier exemple, nous allons créer 4 fichiers .vue que nous allons assembler pour construire notre site.
-
-Nous utiliserons la librairie materializecss pour faire la gestion des colonnes. La librairie est déjà prête à l'emploi dans le fichier index.html qui est fourni sur cette branche
+Aussi, dans le composant `contact`, vous devez relier les input en "two way binding" avec les propriétés correspondantes du composant
