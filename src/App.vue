@@ -1,14 +1,25 @@
 <template>
   <div id="app">
+    <input type="range" min="0" max="100" step="1" v-on:change="showVal">
 
+    <span v-bind:style="{ letterSpacing: spacing + 'px' }">Mon exemple</span>
   </div>
 </template>
 
 <script>
 export default {
   name: 'app',
+  data () {
+    return {
+      spacing: 5
+    }
+  },
   // Ajouter nos 4 composants
-  Components: {}
+  methods: {
+    showVal: function (value) {
+      this.spacing = value.srcElement.value
+    }
+  }
 }
 </script>
 
