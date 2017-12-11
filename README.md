@@ -2,7 +2,7 @@
 
 Commencons par qu'est-ce que VueJS?
 
-VueJS est un framework frontend Javascript crée par Evan You en 201X. Il travaillait pour Google, plus précisement dans l'équipe qui développait Angular. Il a quitté l'équipe car le développement d'Angular ne lui plaisait pas et il a voulu produire son propre framework. C'est comme ca que VueJS est né.
+VueJS est un framework frontend Javascript crée par Evan You. Il travaillait pour Google, plus précisement dans l'équipe qui développait Angular. Il a quitté l'équipe car le développement d'Angular ne lui plaisait pas et il a voulu produire son propre framework. C'est comme ca que VueJS est né.
 
 Ok, ca consite en quoi?
 
