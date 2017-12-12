@@ -8,18 +8,19 @@
     </thead>
 
     <tbody>
-      <!-- Ici j'affiche mes skills : j'utilise un v-for -->
-      <tr v-for="(skill, key) in skills" :key="key">
-        <td> {{ skill.name }}</td>
-        <td> {{ skill.percent}} </td>
-      </tr>
+      <skill v-for="(skill, key) in skills" :name="skill.name" :percent="skill.percent" :key="key"></skill>
     </tbody>
   </table>
 </template>
 
 <script>
+import Skill from '@/components/skill'
+
 export default {
   name: 'mySkills',
+  components: {
+    Skill
+  },
   // Ici, les données de notre composant
   data () {
     return {
