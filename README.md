@@ -1,36 +1,9 @@
-# Exercice 3
+# Exercice 4
 
-Nous avons vu comment créer des composants, afficher des données, comment les récuperer depuis une saisie. 
+Nous avons vu comment faire du routing à travers notre application.
+Nous allons maintenant correctement faire notre composant "mySkills".
+C'est à dire, mettre en place une vraie hiérarchie de composants.
 
-Maintenant il est temps d'organiser nos pages correctement.
-Nous allons mettre en place le systeme de routing de Vue qui s'appelle `vue-router`
+Le but de cet exercice est de transformer le composant mySkills en un composant "mySkills > skill". C'est à dire, afficher un composant "Skill" autant de fois que nécessaire et transmettre les données de ce skill via des "props"
 
-La documentation se trouve ici : https://router.vuejs.org/en/essentials/getting-started.html
-
-Le but de cet exercice est de :
-- créer un nouveau composant `Home` dans le fichier Home.vue qui va contenir notre page d'accueil . C'est à dire déplacer l'utilisation des composants : "myContent, myRightCol" dans ce nouveau composant.
-
-- Créer un second composant `secondPage` dans le fichier SecondPage.vue qui va contenir un simple "Je suis sur la seconde page".
-
-- Importer nos deux nouveaux composants dans le fichier de routing "router/index.js" et déclarer sur :
- > sur la route "/", le composant "home"
- > sur la route "/second", le composant "secondPage"
-(https://router.vuejs.org/en/essentials/getting-started.html)
-
-Le format d'enregistrement est le suivant : 
-```
-{
-  name: 'NomDuComposant',
-  component: Composant,
-  path: '/url/reliée/au/composant'
-}
-```
-
-- Mettre en place le routing dans le fichier "App.vue"
-(https://router.vuejs.org/en/essentials/getting-started.html) > "Router-view"
-
-Le router view doit etre placé de façon à ce que le header et le footer ne soient appelés qu'une seule fois.
-(Le "router-view" doit donc être placé dans le fichier App.vue, pour l'exercice)
-
-- Rajouter des a href vers ces urls dans le composant "header"
-(utilisation des "router-link")
+(https://vuejs.org/v2/guide/components.html#Props)
