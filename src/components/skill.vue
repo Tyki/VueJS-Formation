@@ -1,6 +1,6 @@
 <template>
   <!-- Ici j'affiche mes skills : j'utilise un v-for -->
-  <tr :key="key">
+  <tr>
     <td> {{ name }}</td>
     <td> {{ percent}} </td>
   </tr>
@@ -11,8 +11,7 @@ export default {
   name: 'Skill',
   props: [
     'name',
-    'percent',
-    'key'
+    'percent'
   ]
 }
 </script>
