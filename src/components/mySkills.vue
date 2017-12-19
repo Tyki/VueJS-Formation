@@ -15,6 +15,7 @@
 
 <script>
 import Skill from '@/components/skill'
+import axios from 'axios'
 
 export default {
   name: 'mySkills',
@@ -24,21 +25,21 @@ export default {
   // Ici, les données de notre composant
   data () {
     return {
-      skills: [
-        {
-          name: 'HTML',
-          percent: '80%'
-        },
-        {
-          name: 'CSS',
-          percent: '20%'
-        },
-        {
-          name: 'VueJS',
-          percent: '100%'
-        }
-      ]
+      skills: []
     }
+  },
+  created () {
+    axios({
+      method: 'get',
+      url: 'http://localhost:3000/getSkills'
+    })
+    .then((response) => {
+      console.log(response)
+      this.skills = response.data.skills
+    })
+    .catch(function (error) {
+      console.error(error)
+    })
   }
 }
 </script>
