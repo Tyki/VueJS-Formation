@@ -1,9 +1,32 @@
-# Exercice 4
+# Exercice 5
 
-Nous avons vu comment faire du routing à travers notre application.
-Nous allons maintenant correctement faire notre composant "mySkills".
-C'est à dire, mettre en place une vraie hiérarchie de composants.
+Maintenant que nous avons des composants "mySkills" et "skill", nous allons remplacer les données statiques par des données qui proviennent d'un serveur.
 
-Le but de cet exercice est de transformer le composant mySkills en un composant "mySkills > skill". C'est à dire, afficher un composant "Skill" autant de fois que nécessaire et transmettre les données de ce skill via des "props"
+Un serveur est déjà fourni dans le dossier `serveur`, il faut juste l'installer :
+```
+cd serveur
+npm install
+node index.js
+```
 
-(https://vuejs.org/v2/guide/components.html#Props)
+Le but de cet exercice est de :
+- installer la librairie 'Axios' (https://www.npmjs.com/package/axios). Utiliser la partie "Installing using npm" et "performing a get request"
+
+La route du serveur est la suivante : `http://localhost:3000/getSkills` en GET 
+
+- Utiliser axios pour aller récuperer des données, au chargement du composant 'mySkills'
+
+```
+name: '',
+methods: {
+  ...
+},
+data () {
+  return {
+    ...
+  }
+},
+created () {
+  // ICI, j'utilise Axios pour récuperer les données du serveur et je les injecte dans les data de mon composant et donc de mes composants enfants
+}
+```
