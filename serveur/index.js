@@ -23,7 +23,7 @@ app.get('/getSkills', function (req, res) {
         percent: '100%'
       }
     ]
-  }))
+  })
 })
 
 app.listen(3000)
