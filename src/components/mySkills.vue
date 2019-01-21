@@ -15,6 +15,7 @@
 
 <script>
 import Skill from '@/components/skill'
+import { getSkills } from '../helpers/apiHelper'
 
 export default {
   name: 'mySkills',
@@ -24,21 +25,11 @@ export default {
   // Ici, les données de notre composant
   data () {
     return {
-      skills: [
-        {
-          name: 'HTML',
-          percent: '80%'
-        },
-        {
-          name: 'CSS',
-          percent: '20%'
-        },
-        {
-          name: 'VueJS',
-          percent: '100%'
-        }
-      ]
+      skills: []
     }
+  },
+  mounted () {
+    // ...
   }
 }
 </script>
