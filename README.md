@@ -26,7 +26,12 @@ data () {
     ...
   }
 },
-created () {
-  // ICI, j'utilise Axios pour récuperer les données du serveur et je les injecte dans les data de mon composant et donc de mes composants enfants
+mounted () {
+  // ICI, je charge mes données et je les injecte dans les data de mon composant et donc de mes composants enfants
 }
 ```
+
+- Creer un 'helper' (un fichier .js) qui utilise axios et appelle l'API et qui renvoie les données, en utilisant une promise.
+/!\ à la gestion des erreurs !  
+
+- Afficher un loader tant que les données n'ont pas été recues
