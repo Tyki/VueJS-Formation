@@ -16,8 +16,6 @@ Cette partie présente les différentes informations concernant la partie backen
   - [Middleware d'initilisation de la liste](#module-de-gestion-de-la-todo-list)
   - [Routes](#routes)
   - [Modules externes utilisés](#modules-externes-utilisés)
-
-- [Conclusion et difficultés](#conclusion-et-difficultés)
   
 ## Instructions d'installation et de lancement
 
@@ -85,22 +83,6 @@ Pour réaliser cette APi, différents modules externes ont été utilisés :
 - body-parser : Pour la gestion des requêtes post
 
 - cors : Pour la gestion des requêtes d'origine extérieure
-
-## Conclusion et difficultés
-
-De manière personnelle, j'ai trouvé que cette partie était la plus simple à réaliser par rapport à la partie en Vue-JS.
-Généralement, au niveau du développement, je pense être plus axé backend, et cette partie m'a donc beaucoup plu.
-
-Lors du développement de cette partie, la difficulté principale que j'ai rencontrée était un bug au niveau de l'objet TodoList.
-En effet, lors de la récupération en session d'un objet TodoList déjà initialisé, les méthodes n'étaient plus accessibles, ce qui bloquait l'accès aux données.
-La solution que j'ai mise en place a été d'injecter le prototype de TodoList dans l'objet récupéré.
-
-Enfin, plus tard, lors de la réalisation de la partie en Vue-JS, il est apparu que les requêtes étaient refusées par l'API, car venant d'une origine extérieure.
-J'ai donc installé le module cors qui a permis de régler le problème.
-
-Pour plus d'informations, n'hésitez pas à consulter le détail du code qui est commenté et documenté.
-
-
 
 
 
