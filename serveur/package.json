@@ -1,16 +1,17 @@
 {
-  "name": "serveur",
+  "name": "backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "backend de l'application",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Malo Gasquet",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "cors": "^2.8.4",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "express-session": "^1.15.6"
   }
 }
